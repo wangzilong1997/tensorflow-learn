@@ -10,7 +10,7 @@ print('y_data',y_data)
 ### create tensorflow structure start ###
 
 
-Weights = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
+Weights = tf.Variable(tf.random_uniform([1], -10000.0, 10000.0))
 biases = tf.Variable(tf.zeros([1]))
 
 y = Weights*x_data + biases
